@@ -14,14 +14,14 @@ object VariableArguments_v4 extends App {
 
   private val data = readFinanceData()
 
-  def getRecords(tickers: String*, date:String):Vector[(String, String, Float)] = {
-    val dateFilteredRecords = data.filter(_.date == date)
-
-    val filteredRecords = dateFilteredRecords.filter(
-      record => tickers.contains(record.ticker))
-
-    filteredRecords.map(record => (record.date, record.ticker, record.close))
-  }
+//  def getRecords(tickers: String*, date:String):Vector[(String, String, Float)] = {
+//    val dateFilteredRecords = data.filter(_.date == date)
+//
+//    val filteredRecords = dateFilteredRecords.filter(
+//      record => tickers.contains(record.ticker))
+//
+//    filteredRecords.map(record => (record.date, record.ticker, record.close))
+//  }
 }
 
 

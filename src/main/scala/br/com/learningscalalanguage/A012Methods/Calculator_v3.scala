@@ -3,9 +3,9 @@ package br.com.learningscalalanguage.A012Methods
 object Calculator_v3 extends App {
 
   def computeSum(a: Int, b: Int): Int = {
-    // This will not compile, input arguments to methods are of type val
-    a = 20
-    b = 23
+//    This will not compile, input arguments to methods are of type val
+//    a = 20
+//    b = 23
 
     return a + b
   }

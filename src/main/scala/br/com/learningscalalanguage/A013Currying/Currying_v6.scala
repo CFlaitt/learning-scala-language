@@ -30,21 +30,21 @@ object Currying_v6 extends App {
 
   val getPriceCurried = (getPrice _).curried
 
-  val getPriceForDate = getPriceCurried("12-06-2020") _
-
-  println("------------------DB")
-  println("Open: " + getPriceForDate("DB")("open"))
-  println("Close: " + getPriceForDate("DB")("close"))
-  println("High: " + getPriceForDate("DB")("high"))
-  println("Low: " + getPriceForDate("DB")("low"))
-
-  val getPriceForDateForToyota = getPriceCurried("12-06-2020")("TM") _
-
-  println("------------------TM")
-  println("Open: " + getPriceForDateForToyota("open"))
-  println("Close: " + getPriceForDateForToyota("close"))
-  println("High: " + getPriceForDateForToyota("high"))
-  println("Low: " + getPriceForDateForToyota("low"))
+//  val getPriceForDate = getPriceCurried("12-06-2020") _
+//
+//  println("------------------DB")
+//  println("Open: " + getPriceForDate("DB")("open"))
+//  println("Close: " + getPriceForDate("DB")("close"))
+//  println("High: " + getPriceForDate("DB")("high"))
+//  println("Low: " + getPriceForDate("DB")("low"))
+//
+//  val getPriceForDateForToyota = getPriceCurried("12-06-2020")("TM") _
+//
+//  println("------------------TM")
+//  println("Open: " + getPriceForDateForToyota("open"))
+//  println("Close: " + getPriceForDateForToyota("close"))
+//  println("High: " + getPriceForDateForToyota("high"))
+//  println("Low: " + getPriceForDateForToyota("low"))
 
 }
 

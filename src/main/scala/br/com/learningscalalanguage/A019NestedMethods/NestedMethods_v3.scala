@@ -18,9 +18,9 @@ object NestedMethods_v3 extends App {
 
     println("Date       | Ticker | Close")
     printRecords()
-    printSummary()
-    printAverage()
-    printStandardDeviation()
+//    printSummary()
+//    printAverage()
+//    printStandardDeviation()
 
     def printRecords():Unit = {
 
@@ -30,13 +30,13 @@ object NestedMethods_v3 extends App {
       }
 
       printSummary()
-      printAverage()
-      printStandardDeviation()
+//      printAverage()
+//      printStandardDeviation()
 
       def printSummary():Unit = {
 
         printAverage()
-        printStandardDeviation()
+//        printStandardDeviation()
 
         def printAverage(): Unit = {
           val averageClose = filteredRecords.filter(_.ticker == ticker).

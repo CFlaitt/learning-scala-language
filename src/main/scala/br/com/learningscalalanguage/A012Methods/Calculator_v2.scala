@@ -10,9 +10,9 @@ object Calculator_v2 extends App {
     println("Sum of a and b is: " + (a + b))
   }
 
-  val result = Calculator.computeSum(5, 6)
+  val result = Calculator_v2.computeSum(5, 6)
 
   println("Result is: " + result)
 
-  Calculator.printSum(11, 12)
+  Calculator_v2.printSum(11, 12)
 }
